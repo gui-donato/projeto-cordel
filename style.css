@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+  --font01: verdana, geneva, tahoma, sans-serif;
+  --font02: "Passero One", sans-serif;
+  --font03: "Sriracha", cursive; 
+   
+  }
+  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font01);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font02);
+    font-size: 10vw;
+}
+header > p {
+    padding-bottom: 50px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font03)  ;
+    font-size: 3.5vw;
+}
+section > p {
+    padding: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+   display: inline-block;
+   padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+   
+    
+}
+section#img02{
+    background-image: url(imagens/paginas.jpg);
+   background-position:  right center;
+ 
+}
+section#img01{
+ background-image: url(imagens/joaninha.jpg);
+ 
+ background-position:  right center;
+ 
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover { text-decoration: underline;}
